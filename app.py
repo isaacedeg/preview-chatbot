@@ -7,8 +7,7 @@ import string
 import streamlit as st
 
 # Load the text file and preprocess the data
-with open('file/clean_output.txt', 'r', encoding='utf-8') as f:
-    data = f.read().replace('\n', ' ')
+data = pickle.load(open('file/cleaned_output.txt', 'rb'))
     
 # Tokenize the text into sentences
 sentences = sent_tokenize(data)
