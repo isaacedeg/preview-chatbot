@@ -68,6 +68,6 @@ if st.button("Submit"):
     # Call the chatbot function with the question and display the response
     response = chatbot(question)
     if response == '':
-        st.error('Not related to Sherlock's adventures')
+        st.error("Not related to Sherlock's adventures")
     else:
         st.success(response)
