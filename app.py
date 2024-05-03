@@ -5,6 +5,7 @@ from nltk.stem import SnowballStemmer
 from nltk.stem import WordNetLemmatizer
 import string
 import streamlit as st
+import pickle
 
 # Load the text file and preprocess the data
 data = pickle.load(open('file/cleaned_output.txt', 'rb'))
