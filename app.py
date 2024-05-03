@@ -67,4 +67,7 @@ question = st.text_input("Enter a question:")
 if st.button("Submit"):
     # Call the chatbot function with the question and display the response
     response = chatbot(question)
-    st.success(response)
+    if response == '':
+        st.error('Not related to Sherlock's adventures')
+    else:
+        st.success(response)
