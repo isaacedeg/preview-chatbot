@@ -7,7 +7,7 @@ import string
 import streamlit as st
 
 # Load the text file and preprocess the data
-with open('clean_output.txt', 'r', encoding='utf-8') as f:
+with open('file/clean_output.txt', 'r', encoding='utf-8') as f:
     data = f.read().replace('\n', ' ')
     
 # Tokenize the text into sentences
