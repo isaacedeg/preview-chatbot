@@ -7,6 +7,7 @@ import string
 import streamlit as st
 import pickle
 
+nltk.download('stopwords')
 nltk.download('punkt')
 nltk.download('averaged_perceptron_tagger')
 
