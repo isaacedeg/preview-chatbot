@@ -7,6 +7,9 @@ import string
 import streamlit as st
 import pickle
 
+nltk.download('punkt')
+nltk.download('averaged_perceptron_tagger')
+
 # Load the text file and preprocess the data
 data = pickle.load(open('file/cleaned_output.txt', 'rb'))
     
